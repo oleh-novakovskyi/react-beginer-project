@@ -1,8 +1,18 @@
+//import style
+import "./styles/main.css";
+
+import Navbar from "./componens/navbar/Navbar";
+import Footer from "./componens/footer/Footer";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello!</h1>
+
+      <Navbar />
+        <Home/>
+      <Footer/>
+
     </div>
   );
 }
