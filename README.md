@@ -1,2 +1,2 @@
-# react-beginer-project
+# react-beginner-project
 My initial projects on react
