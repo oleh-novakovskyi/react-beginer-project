@@ -47,8 +47,6 @@
 
 html,
 body {
-	display: flex;
-	flex-direction: column;
 	min-height: 100vh;
 
 	font-family: 'DM Sans', sans-serif;
@@ -57,6 +55,16 @@ body {
 	/* Light mode */
 	background-color: var(--page-bg);
 	color: var(--text-color);
+}
+
+#root {
+	min-height: 100vh;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 /* General */
@@ -272,8 +280,6 @@ body {
 .content-list__item p + p {
 	margin-top: 0.5em;
 }
-
-
 
 @media (max-width: 620px) {
 	/* Header  */
