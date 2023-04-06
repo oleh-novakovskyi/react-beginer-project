@@ -8,8 +8,6 @@ const ProjectCard = () => {
 const {id} = useParams();
 const project = projects[id];
 
-
-console.log(projects[2]);
   return (
     <main className="section">
       <div className="container">

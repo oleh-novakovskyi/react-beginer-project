@@ -40,7 +40,7 @@ const Footer = () => {
             </li>
           </ul>
           <div className="copyright">
-            <p>© 2023 <a href="https://oleh-novakovskyi.github.io/" target="_blank">oleh-novakovskyi.github.io</a></p>
+            <p>© 2023 <a href="https://oleh-novakovskyi.github.io/" rel="noreferrer" target="_blank">oleh-novakovskyi.github.io</a></p>
           </div>
         </div>
       </div>
