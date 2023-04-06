@@ -27,3 +27,9 @@
 .copyright p + p {
 	margin-top: 0.5em;
 }
+.footer a {
+	color:var(--white);
+}
+.footer a:hover {
+	color:var(--turquoise);
+}
