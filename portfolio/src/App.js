@@ -12,19 +12,21 @@ import Contacts from "./pages/Contacts";
 import ProjectCard from "./pages/ProjectCard";
 import Footer from "./componens/footer/Footer";
 
+import ScrollToTop from "./utils/scrollToTop";
+
 function App() {
   return (
     <div className="App">
 
       <Router>
-
+        <ScrollToTop />
         <Navbar />
 
         <Routes>          
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contacts" element={<Contacts />} /> 
-          <Route path="/project" element={<ProjectCard />} />
+          <Route path="/project/:id" element={<ProjectCard />} />
         </Routes> 
 
         <Footer />
