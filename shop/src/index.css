@@ -87,6 +87,24 @@ header .shop-cart {
     z-index: 1000;
 }
 
+header .shop-cart .product {
+    width: 100%;
+}
+header .shop-cart .product img{
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+
+}
+header .shop-cart .product h2{
+    font-style: 20px;
+    margin-bottom: 10px;
+}
+header .shop-cart .product span{
+    color: #797979;
+    font-weight: 600;
+}
+
 main {
     display: flex;
     width: 100%;
