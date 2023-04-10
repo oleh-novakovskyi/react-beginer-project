@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-∂
+
 body {
     background: #fff;
     color: #222;
@@ -85,10 +85,20 @@ header .shop-cart {
     -webkit-box-shadow: 4px 5px 15px -7px #606060;
     box-shadow: 4px 5px 15px -7px #606060;
     z-index: 1000;
+    padding: 5px;
 }
-
+header .shop-cart .empty h2 {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
 header .shop-cart .product {
+    max-width: 388px;
     width: 100%;
+    float: left;
+    padding: 5px;
+    border: 1px solid #bcbcbc;
+    margin-bottom: 3px;
 }
 header .shop-cart .product img{
     width: 70px;
