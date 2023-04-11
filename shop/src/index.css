@@ -11,6 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
+
 .wrapper {
     width: 1280px;
     margin: 50px auto;
@@ -29,13 +30,14 @@ header ul.nav {
     float: right;
     list-style: none;
 }
+
 header ul.nav li {
     display: inline;
     margin-left: 25px;
     cursor: pointer;
     transition: opacity 500ms ease;
-    
 }
+
 header ul.nav li:hover {
     opacity: 0.5;
 }
@@ -52,15 +54,16 @@ header .presentation {
     position: relative;
     padding-bottom: 20px;
 }
+
 header .presentation::after {
     content: 'Blueberry Online Shop';
     position: absolute;
     bottom: 10%;
     left: 50%;
     margin-left: -320px;
-    color:#fff;
+    color: #fff;
     font-size: 60px;
-    font-weight: 600;     
+    font-weight: 600;
 }
 
 header .shop-cart-btn {
@@ -68,6 +71,7 @@ header .shop-cart-btn {
     cursor: pointer;
     transition: color, transform 500ms ease;
 }
+
 header .shop-cart-btn:hover,
 header .shop-cart-btn.active {
     color: #dc3d3d;
@@ -87,11 +91,13 @@ header .shop-cart {
     z-index: 1000;
     padding: 5px;
 }
+
 header .shop-cart .empty h2 {
     font-size: 20px;
     margin: 10px;
     text-align: center;
 }
+
 header .shop-cart .product {
     max-width: 388px;
     width: 100%;
@@ -100,27 +106,51 @@ header .shop-cart .product {
     border: 1px solid #bcbcbc;
     margin-bottom: 3px;
 }
-header .shop-cart .product img{
+
+header .shop-cart .product img {
     width: 70px;
     float: left;
     margin-right: 20px;
 
 }
-header .shop-cart .product h2{
+
+header .shop-cart .product h2 {
     font-style: 20px;
     margin-bottom: 10px;
 }
-header .shop-cart .product span{
+
+header .shop-cart .product span {
     color: #797979;
     font-weight: 600;
 }
 
+header .shop-cart .product .delete-icon {
+    color: #ca5252;
+    float: right;
+    position: relative;
+    top: -10px;
+    right: 15px;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+header .shop-cart .product .delete-icon:hover {
+    color:#dc3d3d;
+    transform: scale(1.5);
+}
+header .shop-cart .sum {    
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
 main {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 main .product {
     width: 30%;
     margin-bottom: 50px;
@@ -141,10 +171,14 @@ main .product img {
 main .product img:hover {
     transform: scale(1.05);
 }
-main h2, main p, main span {
+
+main h2,
+main p,
+main span {
     margin: 10px 20px;
     color: #333;
 }
+
 main span {
     color: #5fa36a;
     font-weight: 600;
@@ -167,7 +201,7 @@ main .add-to-cart {
     transition: transform 500ms ease;
 }
 
-main .add-to-cart:hover { 
+main .add-to-cart:hover {
     transform: scale(1.1) translateY(-2px);
 }
 
@@ -175,4 +209,3 @@ footer {
     text-align: center;
     margin-top: 100px;
 }
-
