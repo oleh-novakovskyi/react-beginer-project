@@ -6,7 +6,7 @@ export class Products extends Component {
         return (
             <main>
                 {this.props.products.map(el => (
-                    <Product key={el.id} product={el} onAdd={this.props.onAdd} />                   
+                    <Product onShowProduct={this.props.onShowProduct} key={el.id} product={el} onAdd={this.props.onAdd} />                   
                 ))}
             </main>
         )

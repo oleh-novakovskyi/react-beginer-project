@@ -13,7 +13,8 @@ body {
 }
 
 .wrapper {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -164,46 +165,72 @@ transform: scale(1.1);
 
 main {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
-
+.full-product {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2000;
+    overflow: auto;
+}
+.full-product > div {
+    width: 600px;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 9px;
+}
 main .product {
-    width: 30%;
+    max-width: 30%;    
     margin-bottom: 50px;
     background: #f5f5f5;
     overflow: hidden;
     position: relative;
-    padding-bottom: 20px;
-    border: 1px solid #ccc;
+    padding-bottom: 20px;   
     border-radius: 10px 10px 0 0;
+    
 }
 
-main .product img {
+
+main .product img,
+.full-product img {
     width: 100%;
     border-radius: 10px 10px 0 0;
     transition: transform 500ms ease;
+    cursor: pointer;
 }
 
-main .product img:hover {
+main .product img:hover,
+.full-product img:hover {
     transform: scale(1.05);
 }
 
 main h2,
 main p,
-main span {
+main span, 
+.full-product h2, 
+.full-product p, 
+.full-product span {
     margin: 10px 20px;
     color: #333;
 }
 
-main span {
+main span, .full-product span {
     color: #5fa36a;
     font-weight: 600;
     font-size: 20px;
 }
 
-main .add-to-cart {
+main .add-to-cart, 
+.full-product .add-to-cart  {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -219,7 +246,8 @@ main .add-to-cart {
     transition: transform 500ms ease;
 }
 
-main .add-to-cart:hover {
+main .add-to-cart:hover, 
+.full-product .add-to-cart:hover {
     transform: scale(1.1) translateY(-2px);
 }
 
